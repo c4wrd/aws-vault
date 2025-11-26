@@ -1,0 +1,32 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Linux & Go Patterns'
+theme = 'hugo-book'
+
+# Enable syntax highlighting
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    noClasses = false
+    style = 'monokai'
+  [markup.goldmark.renderer]
+    unsafe = true
+
+# Book theme configuration
+[params]
+  BookTheme = 'auto'
+  BookToC = true
+  BookSection = 'patterns'
+  BookRepo = 'https://github.com/aws-vault/patterns'
+  BookMenuBundle = '/menu'
+  BookSearch = true
+  BookComments = false
+
+# Menu structure
+[menu]
+  [[menu.before]]
+    name = "Home"
+    url = "/"
+    weight = 1
